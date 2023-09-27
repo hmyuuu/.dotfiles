@@ -2,129 +2,137 @@ local global = require("core.global")
 
 local function load_options()
 	local global_local = {
-		termguicolors = true,
-		mouse = "a",
-		errorbells = true,
-		visualbell = true,
-		hidden = true,
-		fileformats = "unix,mac,dos",
-		magic = true,
-		virtualedit = "block",
-		encoding = "utf-8",
-		viewoptions = "folds,cursor,curdir,slash,unix",
-		sessionoptions = "curdir,help,tabpages,winsize",
-		clipboard = "unnamedplus",
-		wildignorecase = true,
-		wildignore = ".git,.hg,.svn,*.pyc,*.o,*.out,*.jpg,*.jpeg,*.png,*.gif,*.zip,**/tmp/**,*.DS_Store,**/node_modules/**,**/bower_modules/**",
-		backup = false,
-		writebackup = false,
-		swapfile = false,
-		undodir = global.cache_dir .. "undo/",
-		-- directory = global.cache_dir .. "swap/",
 		-- backupdir = global.cache_dir .. "backup/",
-		-- viewdir = global.cache_dir .. "view/",
+		-- directory = global.cache_dir .. "swap/",
 		-- spellfile = global.cache_dir .. "spell/en.uft-8.add",
-		history = 2000,
-		shada = "!,'300,<50,@100,s10,h",
-		backupskip = "/tmp/*,$TMPDIR/*,$TMP/*,$TEMP/*,*/shm/*,/private/var/*,.vault.vim",
-		smarttab = true,
-		shiftround = true,
-		timeout = true,
-		ttimeout = true,
-		timeoutlen = 500,
-		ttimeoutlen = 0,
-		updatetime = 100,
-		redrawtime = 1500,
-		ignorecase = true,
-		smartcase = true,
-		infercase = true,
-		incsearch = true,
-		wrapscan = true,
-		complete = ".,w,b,k",
-		inccommand = "nosplit",
-		grepformat = "%f:%l:%c:%m",
-		grepprg = "rg --hidden --vimgrep --smart-case --",
-		breakat = [[\ \	;:,!?]],
-		startofline = false,
-		whichwrap = "h,l,<,>,[,],~",
-		splitbelow = true,
-		splitright = true,
-		switchbuf = "useopen",
-		backspace = "indent,eol,start",
-		diffopt = "filler,iwhite,internal,algorithm:patience",
-		completeopt = "menuone,noselect",
-		jumpoptions = "stack",
-		showmode = false,
-		shortmess = "aoOTIcF",
-		scrolloff = 2,
-		sidescrolloff = 5,
-		foldlevelstart = 99,
-		ruler = true,
-		cursorline = true,
-		cursorcolumn = true,
-		list = true,
-		showtabline = 2,
-		winwidth = 30,
-		winminwidth = 10,
-		pumheight = 15,
-		helpheight = 12,
-		previewheight = 12,
-		showcmd = false,
-		cmdheight = 2,
-		cmdwinheight = 5,
-		equalalways = false,
-		laststatus = 2,
-		display = "lastline",
-		showbreak = "↳  ",
-		listchars = "tab:»·,nbsp:+,trail:·,extends:→,precedes:←",
-		pumblend = 10,
-		winblend = 10,
+		-- viewdir = global.cache_dir .. "view/",
+		autoindent = true,
 		autoread = true,
 		autowrite = true,
-
-		undofile = true,
-		synmaxcol = 2500,
-		formatoptions = "1jcroql",
-		expandtab = true,
-		autoindent = true,
-		tabstop = 4,
-		shiftwidth = 4,
-		softtabstop = 4,
+		backspace = "indent,eol,start",
+		backup = false,
+		backupskip = "/tmp/*,$TMPDIR/*,$TMP/*,$TEMP/*,*/shm/*,/private/var/*,.vault.vim",
+		breakat = [[\ \	;:,!?]],
 		breakindentopt = "shift:2,min:20",
-		wrap = false,
-		linebreak = true,
-		number = true,
-		relativenumber = true,
-		foldenable = true,
-		signcolumn = "yes",
-		conceallevel = 0,
+		clipboard = "unnamedplus",
+		cmdheight = 1, -- 0, 1, 2
+		cmdwinheight = 5,
+		complete = ".,w,b,k",
+		completeopt = "menuone,noselect",
 		concealcursor = "niv",
+		conceallevel = 0,
+		cursorcolumn = true,
+		cursorline = true,
+		diffopt = "filler,iwhite,internal,linematch:60,algorithm:patience",
+		display = "lastline",
+		encoding = "utf-8",
+		equalalways = false,
+		errorbells = true,
+		expandtab = true,
+		fileformats = "unix,mac,dos",
+		foldenable = true,
+		foldlevelstart = 99,
+		formatoptions = "1jcroql",
+		grepformat = "%f:%l:%c:%m",
+		grepprg = "rg --hidden --vimgrep --smart-case --",
+		helpheight = 12,
+		hidden = true,
+		history = 2000,
+		ignorecase = true,
+		inccommand = "nosplit",
+		incsearch = true,
+		infercase = true,
+		jumpoptions = "stack",
+		laststatus = 2,
+		linebreak = true,
+		list = true,
+		listchars = "tab:»·,nbsp:+,trail:·,extends:→,precedes:←",
+		magic = true,
+		mousescroll = "ver:3,hor:6",
+		number = true,
+		previewheight = 12,
+		-- Do NOT adjust the following option (pumblend) if you're using transparent background
+		pumblend = 0,
+		pumheight = 15,
+		redrawtime = 1500,
+		relativenumber = true,
+		ruler = true,
+		scrolloff = 2,
+		sessionoptions = "buffers,curdir,folds,help,tabpages,winpos,winsize",
+		shada = "!,'500,<50,@100,s10,h",
+		shiftround = true,
+		shiftwidth = 4,
+		shortmess = "aoOTIcF",
+		showbreak = "↳  ",
+		showcmd = false,
+		showmode = false,
+		showtabline = 2,
+		sidescrolloff = 5,
+		signcolumn = "yes",
+		smartcase = true,
+		smarttab = true,
+		softtabstop = 4,
+		splitbelow = true,
+		splitkeep = "screen",
+		splitright = true,
+		startofline = false,
+		swapfile = false,
+		switchbuf = "usetab,uselast",
+		synmaxcol = 2500,
+		tabstop = 4,
+		termguicolors = true,
+		timeout = true,
+		timeoutlen = 300,
+		ttimeout = true,
+		ttimeoutlen = 0,
+		undodir = global.cache_dir .. "undo/",
+		undofile = true,
+		-- Please do NOT set `updatetime` to above 500, otherwise most plugins may not function correctly
+		updatetime = 200,
+		viewoptions = "folds,cursor,curdir,slash,unix",
+		virtualedit = "block",
+		visualbell = true,
+		whichwrap = "h,l,<,>,[,],~",
+		wildignore = ".git,.hg,.svn,*.pyc,*.o,*.out,*.jpg,*.jpeg,*.png,*.gif,*.zip,**/tmp/**,*.DS_Store,**/node_modules/**,**/bower_modules/**",
+		wildignorecase = true,
+		-- Do NOT adjust the following option (winblend) if you're using transparent background
+		winblend = 0,
+		winminwidth = 10,
+		winwidth = 30,
+		wrap = false,
+		wrapscan = true,
+		writebackup = false,
 	}
 
-	if global.is_mac then
-		vim.g.clipboard = {
-			name = "macOS-clipboard",
-			copy = { ["+"] = "pbcopy", ["*"] = "pbcopy" },
-			paste = { ["+"] = "pbpaste", ["*"] = "pbpaste" },
-			cache_enabled = 0,
-		}
-		vim.g.python_host_prog = "/usr/bin/python"
-		vim.g.python3_host_prog = "/usr/local/bin/python3"
+	local function isempty(s)
+		return s == nil or s == ""
 	end
-    if global.is_windows then
-		local win_local={
-		shell = "powershell", 
-		shellquote = "(", 
-		shellpipe = "\\|",
-		shellredir = ">",
-		shellxquote = "",
-		shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command"
-		}
-		for name, value in pairs(win_local) do
-			vim.o[name] = value
-		end
+	local function use_if_defined(val, fallback)
+		return val ~= nil and val or fallback
 	end
-	for name, value in pairs(global_local) do
+
+	-- custom python provider
+	local conda_prefix = os.getenv("CONDA_PREFIX")
+	if not isempty(conda_prefix) then
+		vim.g.python_host_prog = use_if_defined(vim.g.python_host_prog, conda_prefix .. "/bin/python")
+		vim.g.python3_host_prog = use_if_defined(vim.g.python3_host_prog, conda_prefix .. "/bin/python")
+	else
+		vim.g.python_host_prog = use_if_defined(vim.g.python_host_prog, "python")
+		vim.g.python3_host_prog = use_if_defined(vim.g.python3_host_prog, "python3")
+	end
+
+	-- custom sqlite3 provider
+	local sqlite_clib_path = os.getenv("SQLITE_CLIB_PATH")
+	if not isempty(sqlite_clib_path) then
+		-- Try environment variable first
+		vim.g.sqlite_clib_path = sqlite_clib_path
+	elseif global.is_windows then
+		-- Fix sqlite3 missing-lib issue on Windows
+		-- Download the DLLs form https://www.sqlite.org/download.html
+		vim.g.sqlite_clib_path = global.home .. "/Documents/sqlite-dll-win64-x64-3400200/sqlite3.dll"
+	end
+
+	for name, value in pairs(require("modules.utils").extend_config(global_local, "user.options")) do
 		vim.o[name] = value
 	end
 end

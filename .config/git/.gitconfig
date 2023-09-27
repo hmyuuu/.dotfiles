@@ -1,0 +1,8 @@
+[user]
+	name = Huaiming Yu
+	email = huaimingyuuu@gmail.com
+[credential "https://git.overleaf.com"]
+	username = huaimingyuuu@gmail.com
+	helper = cache
+[core]
+	excludesfile = ~/.config/git/.gitignore_global
