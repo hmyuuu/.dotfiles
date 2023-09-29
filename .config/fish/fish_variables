@@ -1,8 +1,13 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export EDITOR:nvim
+SETUVAR --export FISH_CONF:/Users/hmyuuu/\x2econfig/fish/
 SETUVAR --export JULIA_EDITOR:code
+SETUVAR --export NVIM_CONF:/Users/hmyuuu/\x2econfig/nvim/
+SETUVAR --export TMUX_CONF:/Users/hmyuuu/\x2econfig/tmux/
 SETUVAR __fish_initialized:3400
-SETUVAR _fisher_plugins:znculee/fish\x2dfasd
+SETUVAR _fisher_budimanjojo_2F_tmux_2E_fish_files:\x7e/\x2econfig/fish/conf\x2ed/tmux\x2eextra\x2econf\x1e\x7e/\x2econfig/fish/conf\x2ed/tmux\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/tmux\x2eonly\x2econf\x1e\x7e/\x2econfig/fish/conf\x2ed/tmux_abbrs\x2efish
+SETUVAR _fisher_plugins:znculee/fish\x2dfasd\x1ebudimanjojo/tmux\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _fisher_znculee_2F_fish_2D_fasd_files:\x7e/\x2econfig/fish/functions/v\x2efish\x1e\x7e/\x2econfig/fish/functions/z\x2efish
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
@@ -33,3 +38,9 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
+SETUVAR --export fish_tmux_autoconnect:false
+SETUVAR --export fish_tmux_autostart:false
+SETUVAR --export fish_tmux_autostart_once:true
+SETUVAR --export fish_tmux_config:/Users/hmyuuu/\x2etmux\x2econf
+SETUVAR --export fish_tmux_iterm2:false
+SETUVAR --export fish_tmux_unicode:true
