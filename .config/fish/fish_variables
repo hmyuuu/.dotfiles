@@ -2,6 +2,11 @@
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
 SETUVAR --export FISH_CONF:/Users/hmyuuu/\x2econfig/fish/
+SETUVAR --export HOMEBREW_API_DOMAIN:https\x3a//mirrors\x2etuna\x2etsinghua\x2eedu\x2ecn/homebrew\x2dbottles/api
+SETUVAR --export HOMEBREW_BOTTLE_DOMAIN:https\x3a//mirrors\x2etuna\x2etsinghua\x2eedu\x2ecn/homebrew\x2dbottles
+SETUVAR --export HOMEBREW_BREW_GIT_REMOTE:https\x3a//mirrors\x2etuna\x2etsinghua\x2eedu\x2ecn/git/homebrew/brew\x2egit
+SETUVAR --export HOMEBREW_CORE_GIT_REMOTE:https\x3a//mirrors\x2etuna\x2etsinghua\x2eedu\x2ecn/git/homebrew/homebrew\x2dcore\x2egit
+SETUVAR --export HOMEBREW_PIP_INDEX_URL:https\x3a//pypi\x2etuna\x2etsinghua\x2eedu\x2ecn/simple
 SETUVAR --export JULIA_EDITOR:code
 SETUVAR --export NVIM_CONF:/Users/hmyuuu/\x2econfig/nvim/
 SETUVAR --export TMUX_CONF:/Users/hmyuuu/\x2econfig/tmux/
